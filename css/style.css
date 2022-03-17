@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Inspiration&display=swap");
+@font-face {
+  font-family: "TTLakes";
+  src: url("../fonts/TTLakes/TTLakes-Black.eot");
+  src: local("../fonts/TTLakes/TT Lakes Italic"), local("../fonts/TTLakes/TTLakes-Italic"), url("../fonts/TTLakes/TTLakes-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/TTLakes/TTLakes-Italic.woff") format("woff"), url("../fonts/TTLakes/TTLakes-Italic.ttf") format("../fonts/TTLakes/truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+header {
+  min-width: 320px;
+  background-color: white;
+  border: 1px solid black;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.conteiner {
+  min-width: 320px;
+}
+
+@media (min-width: 350px) {
+  .text {
+    width: 47%;
+  }
+  .page img {
+    width: 100%;
+  }
+}
+
+@media (min-width: 750px) {
+  .page img {
+    width: 370px;
+  }
+}
+
+@media (min-width: 750px) {
+  .text {
+    width: 310px;
+    min-height: 160px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .page img {
+    width: 530px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .text {
+    width: 490px;
+    min-height: 170px;
+  }
+}
+
+main {
+  border: 1px solid black;
+  min-width: 320px;
+  height: 510px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+main .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+main .title {
+  font-family: "TTLakes";
+  font-size: 14px;
+  line-height: 40px;
+  letter-spacing: -0.6px;
+  color: #1b1c21;
+}
+
+main nav {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+main nav a {
+  display: inline-block;
+  text-decoration: none;
+  font-family: "TTLakes";
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0 20px;
+  letter-spacing: -0.2px;
+  color: #7e7e82;
+}
+
+main nav a:hover {
+  background: #ffffff;
+  border: 2px solid #b8ffec;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 6px;
+}
+
+main .text {
+  max-height: 90px;
+  max-width: 90%;
+  border: 2px solid black;
+  margin-top: 20px;
+  padding: 0%;
+  overflow: hidden;
+}
+
+main .text p {
+  font-family: "TTLakes";
+  font-size: 14px;
+  line-height: 20px;
+  /* or 143% */
+  letter-spacing: 0.2px;
+  color: #1b1c21;
+}
+
+main .page img {
+  max-width: 100%;
+  margin-top: 20px;
+  border-radius: 20px;
+}
+
+main .more {
+  position: relative;
+  width: 200px;
+  height: 40px;
+}
