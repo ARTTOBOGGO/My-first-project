@@ -58,58 +58,62 @@ header .header-menu {
   .conteiner {
     padding: 0 20px;
   }
-  .text {
+  .content__text {
     width: 100%;
     margin: 10px auto;
     min-height: 80px;
   }
-  .title {
+  .title__main-title {
     margin-top: 10px;
-    margin-bottom: 45px;
+    margin-bottom: 30px;
   }
-  .page img {
-    margin-top: 50px;
+  .content__page img {
+    margin-top: 24px;
     width: 100%;
+    border-radius: 10px;
   }
 }
 
 @media (min-width: 750px) {
-  .page img {
+  .content__page img {
     width: 100%;
     height: 100%;
     margin-top: 40px;
     margin-right: 30px;
   }
-  .page {
+  .content__page {
     width: 47%;
     height: auto;
   }
 }
 
 @media (min-width: 750px) {
-  .text {
-    width: 310px;
-    min-height: 170px;
+  .content__text {
+    width: 300px;
+    min-height: 190px;
     margin-top: 30px;
   }
-  .title {
+  .title__main-title {
     margin-top: 10px;
     margin-bottom: 15px;
   }
 }
 
 @media (min-width: 1100px) {
-  .page img {
+  .content__page img {
     width: 500px;
     min-height: 270px;
     margin-top: 50px;
   }
-  .text {
+  .more {
+    margin-left: 8px;
+  }
+  .content__text {
     width: 490px;
     min-height: 210px;
     margin-top: 50px;
   }
-  .title {
+  .title__main-title {
     margin-top: 10px;
     margin-bottom: 5px;
   }
@@ -129,12 +133,14 @@ main .content {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 main .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   font-family: "TTLakesCondensed";
   font-size: 14px;
   line-height: 40px;
@@ -143,14 +149,27 @@ main .title {
   color: #1b1c21;
 }
 
-main nav {
+main .title:hover::before {
+  content: url("../page/highlight.png");
+  display: inline-block;
+  margin-right: 30px;
+  margin-top: 10px;
+  -webkit-animation-delay: 2000ms;
+          animation-delay: 2000ms;
+}
+
+main .navigation {
   overflow-x: scroll;
   overflow-y: hidden;
   white-space: nowrap;
   text-decoration: none;
 }
 
-main nav a {
+main .navigation::-webkit-scrollbar {
+  width: 0;
+}
+
+main .navigation a {
   display: inline-block;
   text-decoration: none;
   font-family: "TTLakes";
@@ -161,7 +180,7 @@ main nav a {
   color: #7e7e82;
 }
 
-main nav a:hover {
+main .navigation a:hover {
   background: #ffffff;
   border: 2px solid #b8ffec;
   -webkit-box-sizing: border-box;
@@ -170,14 +189,14 @@ main nav a:hover {
   padding: 5px 10px;
 }
 
-main .text {
+main .content__text {
   max-height: 90px;
   max-width: 90%;
   border: 2px solid black;
   overflow: hidden;
 }
 
-main .text p {
+main .content__text p {
   font-family: "TTLakes";
   font-size: 14px;
   line-height: 20px;
@@ -186,14 +205,28 @@ main .text p {
   color: #1b1c21;
 }
 
-main .page img {
+main .content__page .content__page img {
   max-width: 100%;
-  border-radius: 5px;
+  border-radius: 15px;
   background-image: url("../page/Subtract.svg");
 }
 
 main .more {
+  width: 47% div;
+  width-clear: both;
+}
+
+main .more div {
   position: relative;
   width: 200px;
-  height: 40px;
+  margin-left: 50px;
+}
+
+main .more div::before {
+  content: url("../page/expand.png");
+  position: absolute;
+  height: 10px;
+  width: 10px;
+  left: -30px;
+  bottom: 10px;
 }
