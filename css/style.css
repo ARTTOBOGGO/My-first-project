@@ -246,7 +246,7 @@ main .pseudo .title {
 main .pseudo .title::before {
   content: url("../page/highlight.png");
   display: inline-block;
-  margin-right: 30px;
+  margin-right: 10px;
   margin-top: 10px;
   -webkit-animation-delay: 2000ms;
           animation-delay: 2000ms;
@@ -273,6 +273,7 @@ main .navigation a {
   line-height: 24px;
   margin: 0 20px;
   letter-spacing: -0.2px;
+  padding: 7px 12px;
   color: #7e7e82;
 }
 
