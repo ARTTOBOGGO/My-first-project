@@ -23,7 +23,7 @@
 header {
     min-width: 320px;
     background-color: white;
-    border: 1px solid black;
+    //border: 1px solid black;
     height: 80px;
     display: flex;
     align-items: center;
@@ -95,7 +95,7 @@ header {
     .content__page img {
         width: 500px;
         min-height: 270px;
-        margin-top: 50px;
+        margin-top: 20px;
     }
     .more {
         margin-left: 8px;
@@ -104,7 +104,7 @@ header {
     .content__text {
         width: 490px;
         min-height: 210px;
-        margin-top: 50px;
+        margin-top: 20px;
     }
     .title__main-title {
         margin-top: 10px;
@@ -113,7 +113,7 @@ header {
 }
 
 main {
-    border: 1px solid black;
+    //border: 1px solid black;
     min-width: 320px;
     height: 510px;
     box-sizing: border-box;
@@ -129,13 +129,14 @@ main {
         line-height: 40px;
         letter-spacing: -0.6px;
         font-weight: 700;
+        min-height: 70px;
         color: #1b1c21;
         //margin-top: 10px;
         //margin-bottom: 45px;
         //width: 290px;
         //height: 40px;
 
-        &:hover::before {
+        &::before {
             content: url("../page/highlight.png");
             display: inline-block;
             margin-right: 30px;
@@ -148,6 +149,7 @@ main {
         overflow-y: hidden;
         white-space: nowrap;
         text-decoration: none;
+        min-height: 60px;
         &::-webkit-scrollbar {
             width: 0;
         }
@@ -174,7 +176,7 @@ main {
     .content__text {
         max-height: 90px;
         max-width: 90%;
-        border: 2px solid black;
+        //border: 2px solid black;
         // margin-top: 30px;
 
         overflow: hidden;
